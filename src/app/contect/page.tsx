@@ -1,3 +1,5 @@
+'use client';  // Add this line at the top
+
 import React, { useState } from "react";
 
 function Contact() {
@@ -7,7 +9,6 @@ function Contact() {
     message: ""
   });
 
-  // Correct type for the event (React.ChangeEvent)
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
