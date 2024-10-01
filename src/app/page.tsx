@@ -20,7 +20,8 @@ function Home() {
         </h1>
 
         <p className="text-lg mt-4 max-w-xl mx-auto cursor-pointer">
-          I'm a Full Stack developer specializing in creating the visual and interactive aspects of websites and web applications. I use technologies like HTML, CSS, TypeScript, and Next.js to build user interfaces that are both functional and aesthetically pleasing. I ensure a seamless user experience by optimizing performance and ensuring cross-browser compatibility.
+        <p>I&apos;m a Full Stack Developer</p>
+ specializing in creating the visual and interactive aspects of websites and web applications. I use technologies like HTML, CSS, TypeScript, and Next.js to build user interfaces that are both functional and aesthetically pleasing. I ensure a seamless user experience by optimizing performance and ensuring cross-browser compatibility.
         </p>
 
         <div className="mt-10">
