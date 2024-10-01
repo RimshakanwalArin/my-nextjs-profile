@@ -2,32 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+
+#body {
+  background-color: #2b15b7;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+header {
+  background-color: #fff;
+  border: solid rgba(0, 0, 0, 0.413);
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.622);
+  position: fixed;
+  top: 0px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.img1 {
+  max-width: 70px;
+  height: 70px;
+  background-color: green;
+  border: solid rgba(3, 37, 21, 0.331);
+  border-radius: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.link {
+  margin: 20px;
+  text-align: right;
+}
+
+.link a {
+  padding-right: 22px;
+  color: rgba(20, 20, 229, 0.554);
+  cursor: pointer;
+}
+
+.link a:hover {
+  padding: 10px;
+  background-color: #3316eb;
+  color: white;
+  border-radius: 20px;
+  transition: 3s;
 }

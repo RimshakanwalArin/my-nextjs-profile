@@ -16,7 +16,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+      <header>
+        <div className="img1">
+          
+        <img src="https://i.pinimg.com/474x/6b/56/5c/6b565c644841dd37810ec9b887fb0fff.jpg" alt="logo" />
+        </div>
+        <div className="link">
+          <a href="http://localhost:3000">Home</a>
+          <a href="http://localhost:3000/about">About us</a>
+          <a href="http://localhost:3000/contect">Contect us</a>
+        </div>
+       </header> 
+      </body>
     </html>
   );
 }
