@@ -1,4 +1,3 @@
-'use client'
 import React, { useState } from "react";
 
 function Contact() {
@@ -8,7 +7,8 @@ function Contact() {
     message: ""
   });
 
-  const handleChange = (e) => {
+  // Correct type for the event (React.ChangeEvent)
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -16,9 +16,9 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic yahan add karein
+    // Form submission logic
     console.log(formData);
   };
 
@@ -61,7 +61,7 @@ function Contact() {
                 onChange={handleChange}
                 placeholder="Your message here..."
                 className="p-2 w-full text-black"
-                rows="4"
+                rows={4}
               />
             </div>
 
