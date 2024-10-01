@@ -24,12 +24,12 @@ function Contact() {
 
   return (
     <div className="border-solid">
-      <div className="p-36 bg-gradient-to-r from-blue-400 to-blue-800 text-white" style={{ marginTop: "70px" }}>
-        <div className="text-2xl text-white p-10">
-          <h2 className="text-4xl p-10">Contact Us</h2>
+      <div className="p-8 md:p-36 bg-gradient-to-r from-blue-400 to-blue-800 text-white" style={{ marginTop: "70px" }}>
+        <div className="text-xl md:text-2xl text-white p-6 md:p-10">
+          <h2 className="text-3xl md:text-4xl p-4 md:p-10">Contact Us</h2>
 
           <form onSubmit={handleSubmit}>
-            <div className="p-7">
+            <div className="p-4 md:p-7">
               <label className="block mb-2">Name</label>
               <input
                 type="text"
@@ -41,7 +41,7 @@ function Contact() {
               />
             </div>
 
-            <div className="p-7">
+            <div className="p-4 md:p-7">
               <label className="block mb-2">Email Address</label>
               <input
                 type="email"
@@ -53,7 +53,7 @@ function Contact() {
               />
             </div>
 
-            <div className="p-7">
+            <div className="p-4 md:p-7">
               <label className="block mb-2">Message</label>
               <textarea
                 name="message"
@@ -65,8 +65,8 @@ function Contact() {
               />
             </div>
 
-            <div className="p-7">
-              <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white p-2">
+            <div className="p-4 md:p-7">
+              <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white p-2 w-full md:w-auto">
                 Submit
               </button>
             </div>
